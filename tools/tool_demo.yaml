@@ -1,0 +1,43 @@
+identity:
+  name: tool_demo
+  author: wsq
+  label:
+    en_US: tool_demo
+    zh_Hans: tool_demo
+    pt_BR: tool_demo
+description:
+  human:
+    en_US: demo
+    zh_Hans: demo
+    pt_BR: demo
+  llm: demo
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query string
+      zh_Hans: 查询语句
+      pt_BR: Query string
+    human_description:
+      en_US: demo
+      zh_Hans: demo
+      pt_BR: demo
+    llm_description: demo
+    form: llm
+  - name: model
+    type: model-selector
+    scope: llm
+    required: true
+    value: gpt-3.5-turbo
+    label:
+      en_US: Model
+      zh_Hans: 模型
+    human_description:
+      en_US: Model
+      zh_Hans: 模型
+    llm_description: 模型
+    form: form
+extra:
+  python:
+    source: tools/tool_demo.py
