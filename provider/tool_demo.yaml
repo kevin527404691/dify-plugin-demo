@@ -1,0 +1,17 @@
+identity:
+  author: wsq
+  name: tool_demo
+  label:
+    en_US: tool_demo
+    zh_Hans: tool_demo
+    pt_BR: tool_demo
+  description:
+    en_US: demo
+    zh_Hans: demo
+    pt_BR: demo
+  icon: icon.svg
+tools:
+  - tools/tool_demo.yaml
+extra:
+  python:
+    source: provider/tool_demo.py
